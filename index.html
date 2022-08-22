@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  
+  <title>Intro Section with Dropdown Navigation - Coded by Ferdinalaxewall.</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">
+      <img src="./images/logo.svg" alt="Snap Logo">
+    </a>
+    <div class="navbar-list-group" data-navigation-show="hide">
+      <button class="close-menu-button">
+        <img src="./images/icon-close-menu.svg" alt="Close Menu Icon">
+      </button>
+
+      <ul class="navbar-left-group">
+        <li class="navbar-list navbar-dropdown">
+          <a class="navbar-link" href="#" data-dropdown-show="hide" data-target="features-dropdown">
+            Features 
+            <img src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+          </a>
+          <ul class="dropdown-list" id="features-dropdown" data-dropdown-show="hide">
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="#">
+                <div class="image-wrapper">
+                  <img src="./images/icon-todo.svg" alt="Todo List Icon">
+                </div>
+                Todo List
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-link" href="#">
+                <div class="image-wrapper">
+                  <img src="./images/icon-calendar.svg" alt="Calendar Icon">
+                </div>
+                Calendar
+              </a>
+            </li>
+            <li class="dropdown-item">
+                <a class="dropdown-link" href="#">
+                  <div class="image-wrapper">
+                    <img src="./images/icon-reminders.svg" alt="Reminders Icon">
+                  </div>
+                Reminders
+              </a>
+            </li>
+            <li class="dropdown-item">
+                <a class="dropdown-link" href="#">
+                  <div class="image-wrapper">
+                    <img src="./images/icon-planning.svg" alt="Planning Icon">
+                  </div>
+                  Planning
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+
+        <li class="navbar-list navbar-dropdown">
+          <a class="navbar-link" href="#" data-dropdown-show="hide" data-target="company-dropdown">
+            Company 
+            <img src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+          </a>
+          
+          <ul class="dropdown-list" id="company-dropdown" data-dropdown-show="hide">
+            <li class="dropdown-item"><a class="dropdown-link" href="#">History</a></li>
+            <li class="dropdown-item"><a class="dropdown-link" href="#">Our Team</a></li>
+            <li class="dropdown-item"><a class="dropdown-link" href="#">Blog</a></li>
+          </ul>
+        </li>
+        
+        
+        <li class="navbar-list"><a class="navbar-link" href="#">Careers</a></li>
+        <li class="navbar-list"><a class="navbar-link" href="#">About</a></li>
+        
+      </ul>
+
+      
+      <div class="navbar-right-group">
+        <a href="#" class="navbar-button" id="login-button">Login</a>
+        <a href="#" class="navbar-button" id="register-button">Register</a>
+      </div>
+    </div>
+    
+    <div class="navbar-overlay"></div>
+
+    <button class="menu-button" data-navigation-show="hide">
+      <img src="./images/icon-menu.svg" alt="Hamburger Menu Icon">
+    </button>
+  </nav>
+
+  <section class="introduction-section">
+    <div class="section-left-group">
+      <h1 class="section-title">Make remote work</h1>
+      <p class="section-description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+
+      <a href="#" class="cta-button">Learn more</a>
+
+      <div class="client-image-group">
+        <img src="./images/client-databiz.svg" alt="Client Databiz Icon">
+        <img src="./images/client-audiophile.svg" alt="Client Audhiophile Icon">
+        <img src="./images/client-meet.svg" alt="Client Meet Icon">
+        <img src="./images/client-maker.svg" alt="Client Maker Icon">
+      </div>
+    </div>
+
+    <div class="section-right-group">
+      <div class="image-container"></div>
+    </div>
+  </section>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./style/script.js"></script>
+</body>
+</html>
